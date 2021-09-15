@@ -452,19 +452,25 @@
   background-size: auto 13px;
 }
 .contents .inner .contents-box {
-  margin-top: 15px;
 	position: relative;
+  margin-top: 15px;
 	/* 아이폰 se에서 이상적인 그래프 크기 */
 }
 .contents .inner .contents-box .visual {
-  position: relative;
+	position: relative;
   z-index: 200;
 	box-shadow: 0px 0px 10px 0px rgba(68, 49, 49, 0.16);
 	border-radius: 10px;
 }
 .contents .inner .contents-box .visual img {
-  display: block;
+	display: block;
   width: 100%;
+}
+.contents .inner .contents-box .visual p {
+	margin-top: 10px;
+	font-size: 1.1rem;
+	color: #A4D0EB;
+	text-align: center;
 }
 .contents .inner .contents-box .bg-color {
 	position: absolute;
