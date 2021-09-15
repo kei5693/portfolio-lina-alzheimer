@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="favicon.ico">
+  <title>치매진단 모바일 시뮬레이터</title>
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <script src="./js/vue.min.js"></script>
+  <script src="./js/vuex.js"></script>
+  <script src="./js/clipboard.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div id="wrap">
+      <!-- container -->
+      <div class="container">
+        <top-header></top-header>
+        <!-- Alzheimaer-Quest-wrap -->
+        <div id="Alzheimaer-Quest-wrap">
+          <!-- container -->
+          <div class="container">
+            <!-- progress-wrap -->
+            <div id="progress-wrap">
+              <div class="progress-con">
+                <div class="progress-contents" :class="'step'+(testIndex+1)"></div>
+              </div>
+            </div>
+            <!-- //progress-wrap -->
+            
+            <!-- contents -->
+            <div class="contents">
+              <div class="quest-area test-page">
+                <div class="illust" :class="'img'+(testIndex+1)"></div>
+                <div class="quest-box">
+                  <div class="txt" v-html="testQustions[testIndex]"></div>
+                  <div class="space"></div>
+                  <div class="btn-wrap">
+                    <div class="btn" :class="{on:testQustionsSelected[testIndex] == true}"
+                      @click="selectedValue(testIndex, true)">네</div>
+                    <div class="btn" :class="{on:testQustionsSelected[testIndex] == false}"
+                      @click="selectedValue(testIndex, false)">아니요</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-btns" @click="onClickPrev">
+                <div class="pre-btn">이전</div>
+              </div>
+
+              <div class="bg-color"></div>
+            </div>
+            <!-- //contents -->
+          </div>
+          <!-- //container -->
+        </div>
+        <!-- //Alzheimaer-Quest-wrap -->
+      </div>
+      <!-- //container -->
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

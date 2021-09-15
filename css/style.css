@@ -1,0 +1,843 @@
+#app {
+	position: fixed;
+	width: 100%;
+	min-width: 320px;
+	height: 100%;
+}
+/* common-popup */
+.popup-wrap {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.popup-wrap.heightAuto .popup-con {
+	height: auto;
+	transform: translateY(-50%);
+  top: 50%;
+}
+.popup-wrap .popup-con {
+	position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.popup-wrap .popup-con .inner {
+	width: 100%;
+	height: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+.popup-wrap .popup-con .inner h2 {
+  height: 34px;
+  border-bottom: 1px solid #878787;
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: #231f20;
+}
+.popup-wrap .popup-con .inner .contents-con {
+	overflow-y: auto;
+	height: calc(100% - 35px);
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+.popup-wrap .popup-con .inner .contents-con dt {
+	color: #0069aa;
+	font-size: 1.2rem;
+	padding-top: 15px;
+}
+.popup-wrap .popup-con .inner .contents-con dt:first-child {
+  padding: 0;
+}
+.popup-wrap .popup-con .inner .contents-con dd {
+	color: #58595b;
+	font-size: 1.3rem;
+	padding-top: 3px;
+	font-weight: 200;
+}
+.popup-wrap .popup-con .inner .contents-con img {
+	display: block;
+  width: 100%;
+}
+.popup-wrap .popup-con .inner .contents-con .share-list {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.popup-wrap .popup-con .inner .contents-con .share-list > li + li {margin-left: 40px;}
+.popup-wrap .popup-con .inner .contents-con .share-list > li img {
+	display: block;
+	width: 42px;
+}
+.popup-wrap .popup-con .inner .contents-con .share-list > li span {
+	display: block;
+	margin-top: 10px;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+.popup-wrap .popup-con .close {
+	position: absolute;
+	right: 46px;
+	top: 43px;
+	z-index: 10;
+	width: 40px;
+	height: 40px;
+	background: url('../images/common/btn_close.svg') no-repeat 50% 50%;
+	background-size: 80%;
+}
+
+
+
+
+
+/* header */
+#header-wrap {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 200;
+	width: 100%;
+	background-color: #fff;
+}
+.header-contain {position: relative;}
+.header-contents {
+	width: 100%;
+	height: 50px;
+	box-shadow: inset 0px -1px 0px 0px #707070;
+	position: relative;
+	display: flex;
+	list-style: none;
+}
+.header-contents > li {
+	background-repeat: no-repeat;
+	width: 50%;
+}
+.header-contents > li:first-child {
+	margin-left: 25px;
+	background: url('../images/common/logo.png') no-repeat 0 50%;
+	background-size: 102px auto;
+}
+
+/* progress */
+#progress-wrap {
+	position: relative;
+	width: 100%;
+	min-width: 320px;
+	height: 60px;
+	margin-top: 50px;
+}
+#progress-wrap .progress-con {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #1977b2;
+	text-align: center;
+}
+#progress-wrap .progress-contents {
+	width: calc(100% - 50px);
+	height: 100%;
+	display: inline-block;
+	max-width: 320px;
+	max-height: 60px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0px 25px;
+}
+#progress-wrap .progress-contents.step1 {background-image: url('../images/survey/2_progress_01.png');}
+#progress-wrap .progress-contents.step2 {background-image: url('../images/survey/2_progress_02.png');}
+#progress-wrap .progress-contents.step3 {background-image: url('../images/survey/2_progress_03.png');}
+#progress-wrap .progress-contents.step4 {background-image: url('../images/survey/2_progress_04.png');}
+#progress-wrap .progress-contents.step5 {background-image: url('../images/survey/2_progress_05.png');}
+#progress-wrap .progress-contents.step6 {background-image: url('../images/survey/2_progress_06.png');}
+#progress-wrap .progress-contents.step7 {background-image: url('../images/survey/2_progress_07.png');}
+#progress-wrap .progress-contents.step8 {background-image: url('../images/survey/2_progress_08.png');}
+#progress-wrap .progress-contents.step9 {background-image: url('../images/survey/2_progress_09.png');}
+#progress-wrap .progress-contents.step10 {background-image: url('../images/survey/2_progress_10.png');}
+
+/* Alzheimaer */
+#Alzheimaer-Quest-wrap {
+	width: 100%;
+	height: 100%;
+}
+#Alzheimaer-Quest-wrap > .container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #0069aa;
+	overflow-y: auto;
+}
+#Alzheimaer-Quest-wrap > .container .section-top {
+	position: relative;
+	width: 100%;
+	height: 0px;
+	padding-bottom: 80.3125%;
+	background-color: #0069aa;
+	z-index: 10;
+}
+#Alzheimaer-Quest-wrap > .container > .contents {
+	width: 100%;
+	height: calc(100% - 50px - 60px);
+	margin: 0px auto;
+	padding: 0px;
+	max-width: 360px;
+	min-width: 320px;
+	min-height: 465px;
+	/* 아이폰 se 기준 적용 */
+}
+#Alzheimaer-Quest-wrap > .container > .contents .quest-area {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: calc(100% - 50px);
+	height: calc(100% - 25px - 67px);
+	min-width: 270px;
+	/* 아이폰 se 기준 */
+	transform: translate(-50%, 0px);
+	padding: 25px 25px 0px;
+	min-height: 395px;
+	z-index: 5;
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust {
+	width: 100%;
+	height: 40%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	z-index: 100;
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img1 {
+	background-image: url('../images/survey/2_img01.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img2 {
+	background-image: url('../images/survey/2_img02.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img3 {
+	background-image: url('../images/survey/2_img03.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img4 {
+	background-image: url('../images/survey/2_img04.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img5 {
+	background-image: url('../images/survey/2_img05.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img6 {
+	background-image: url('../images/survey/2_img06.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img7 {
+	background-image: url('../images/survey/2_img07.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img8 {
+	background-image: url('../images/survey/2_img08.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img9 {
+	background-image: url('../images/survey/2_img09.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .illust.img10 {
+	background-image: url('../images/survey/2_img10.png');
+}
+#Alzheimaer-Quest-wrap > .container > .contents .quest-box {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 26px);
+	height: 40%;
+	max-height: 200px;
+	padding: 13px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+	background-color: #fff;
+}
+#Alzheimaer-Quest-wrap > .container > .contents .quest-box .txt {
+	position: relative;
+	font-size: 1.8rem;
+	color: #58595b;
+	letter-spacing: -0.5px;
+	font-weight: 400;
+	line-height: 2.2rem;
+}
+#Alzheimaer-Quest-wrap > .container > .contents .quest-box .space {
+	height: 100%;
+}
+#Alzheimaer-Quest-wrap > .container > .contents .quest-box .btn-wrap {
+	position: relative;
+	width: 100%;
+}
+#Alzheimaer-Quest-wrap > .container > .contents .quest-box .btn-wrap .btn {
+	width: 100%;
+	height: 42px;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e5f6fb url('../images/common/ico-btn-uncheck.png') no-repeat 10px 50%;
+	background-size: 25px;
+	color: #58595b;
+}
+#Alzheimaer-Quest-wrap > .container > .contents .quest-box .btn-wrap .btn:last-child {
+	margin-top: 10px;
+}
+#Alzheimaer-Quest-wrap > .container > .contents .quest-box .btn-wrap .btn.on {
+	background-color: #00aae0;
+	background-image: url('../images/common/ico-btn-check.png');
+	color: #fff;
+}
+/* #Alzheimaer-Quest-wrap
+> .container
+> .contents
+.quest-box
+.btn-wrap
+.btn {
+    
+    margin-top: 10px;
+    
+} */
+
+#Alzheimaer-Quest-wrap > .container .progress-btns {
+	position: absolute;
+	left: 25px;
+	bottom: 25px;
+	display: table;
+	z-index: 5;
+}
+#Alzheimaer-Quest-wrap > .container .progress-btns .pre-btn {
+	width: 140px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px #cad2d4 solid;
+	color: #878787;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: 400;
+	display: table-cell;
+	vertical-align: middle;
+	background: url('../images/ico-pre-btn.png') no-repeat 10px 50%;
+	background-size: 8px;
+}
+#Alzheimaer-Quest-wrap > .container .bg-color {
+	position: absolute;
+	bottom: 0;
+	left: -1000px;
+	width: 10000px;
+	height: 40%;
+	background-color: #fff;
+}
+/* index.html */
+#wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.contents {
+	position: relative;
+  display: flex;
+  flex-direction: column;
+	margin-top: 50px;
+	height: calc(100% - 50px);
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  background-color: #0069aa;
+}
+.contents .inner {
+  padding: 36px 25px 0px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.contents .inner .title {
+	position: relative;
+	font-size: 2.4rem;
+	font-weight: 600;
+	letter-spacing: -1.5px;
+	line-height: 130%;
+}
+.contents .inner .title .title-popup-btn {
+	position: absolute;
+	right: -8px;
+	top: -8px;
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	background: url('../images/common/btn_01.png') no-repeat 100% 50%;
+  background-size: cover;
+}
+.contents .inner .sub-desc {
+  position: relative;
+  height: 82px;
+	padding-top: 10px;
+  box-sizing: border-box;
+	color: #58595b;
+	font-size: 1.3rem;
+	font-weight: 300;
+	line-height: 1.8rem;
+	letter-spacing: 0px;
+}
+.contents .inner .sub-desc span {font-weight: 500;}
+.contents .inner .sub-desc:after {
+  content: '';
+  position: absolute;
+  top: -23px;
+  right: 0;
+  width: 77px;
+  height: 106px;
+  background: url('../images/index/1_img01.png') no-repeat 50% 50%;
+  background-size: auto 106px;
+}
+.contents .inner .test-start {
+  padding: 7px 0px 6px 13px;
+  border: 1px solid #00AAE0;
+  border-radius: 5px;
+  background: #B1ECFF url('../images/index/1_img02-right.png') no-repeat 95% 100%;
+  background-size: auto 59px;
+}
+.contents .inner .test-start p {
+  color: #231F20;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+.contents .inner .test-start p strong {font-weight: 500;}
+.contents .inner .test-start h3 {
+  margin-top: 5px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #0069AA;
+  animation: blinkText alternate 2s infinite cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+@keyframes blinkText {
+  0%, 5%		{opacity: 1;}
+  10%, 15%	{opacity: 0;}
+  20%, 100%	{opacity: 1;}
+}
+.contents .inner .test-start h3 span {
+  position: relative;
+  display: inline-block;
+  padding-right: 18px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #0069AA;
+}
+.contents .inner .test-start h3 span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 13px;
+  background: url('../images/common/1_btn_arrow.svg') no-repeat 50% 50%;
+  background-size: auto 13px;
+}
+.contents .inner .contents-box {
+  margin-top: 15px;
+	position: relative;
+	/* 아이폰 se에서 이상적인 그래프 크기 */
+}
+.contents .inner .contents-box .visual {
+  position: relative;
+  z-index: 200;
+	box-shadow: 0px 0px 10px 0px rgba(68, 49, 49, 0.16);
+	border-radius: 10px;
+}
+.contents .inner .contents-box .visual img {
+  display: block;
+  width: 100%;
+}
+.contents .inner .contents-box .bg-color {
+	position: absolute;
+	top: 50%;
+	left: -25px;
+  z-index: 100;
+	width: calc(100% + 50px);
+	height: 50%;
+	background-color: #0069aa;
+}
+.overY {overflow-y: auto;}
+
+/* test.html */
+#alzheimer-wrap {
+	position: fixed;
+	width: 100%;
+	height: calc(100% - 50px);
+	margin-top: 50px;
+}
+#alzheimer-wrap .alzheimer-con {
+	width: 100%;
+	height: 100%;
+}
+
+/* result */
+#result-wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#result-wrap .result-cotain {
+	overflow-y: scroll;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 50px);
+	background: #0069aa;
+}
+#result-wrap .result-cotain .result-contents {
+	position: relative;
+	padding: 30px 25px;
+  box-sizing: border-box;
+	background: #0069aa url('../images/result-bg.png') repeat-x left top;
+	background-size: 360px;
+}
+#result-wrap .result-cotain .result-contents .title {
+  padding-bottom: 12px;
+  background: url('../images/img-result.png') no-repeat 100% 100%;
+	background-size: auto 75px;
+}
+#result-wrap .result-cotain .result-contents .title h2 {
+	color: #fff;
+	font-size: 2.4rem;
+	font-weight: 700;
+  line-height: 1.3;
+	letter-spacing: -1px;
+}
+#result-wrap .result-cotain .result-contents .title p {
+	margin-top: 13px;
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 300;
+}
+#result-wrap .result-cotain .result-contents .resultBox {
+  padding: 12px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  border-top: 1px solid #cfeef8;
+	box-shadow: 0 4px 10px rgb(0,0,0,0.16);
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer-condition > p {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #0069aa;
+	letter-spacing: -1px;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer-condition > p span {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 25px;
+	margin: 0px 5px;
+	border-radius: 5px;
+	background-color: #f5f6f7;
+  font-size: 1.8rem;
+	color: #f8981d;
+	text-align: center;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer-condition > ul {
+	margin-top: 5px;
+	list-style: none;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer-condition > ul > li {
+	position: relative;
+	padding-left: 15px;
+	word-break: keep-all;
+	font-size: 1.1rem;
+	color: #878787;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer-condition > ul > li::before {
+	content: "※";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related {
+	border-top: 1px solid #878787;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con {
+	display: flex;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con > div {
+	position: relative;
+	flex: 1 0 auto;
+	border-radius: 5px;
+	background-color: #e5f6fb;
+	background-size: auto 20px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con .alzheimer {
+  background-image: url('../images/info-btn01.png');
+	margin-right: 10px;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con > div > p {
+	position: relative;
+  margin: 12px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #0069AA;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con > div > p strong {
+	font-weight: 500;
+  color: #0069AA;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con > div > p:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	right: 0;
+	width: 10px;
+	height: 12px;
+	background: url('../images/common/1_btn_arrow.svg') no-repeat 50% 50%;
+  background-size: auto 12px;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con .cdr {
+	background-image: url('../images/info-btn02.png');
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .movie {
+	display: flex;
+	margin-top: 10px;
+	border-radius: 5px;
+	background: #00AAE0 url('../images/info-btn03.png') no-repeat calc(100% - 40px) 100%;
+	background-size: auto 33px;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .movie a {
+	position: relative;
+	flex: 1 1 0;
+	margin: 12px;
+	font-size: 1.3rem;
+	color: #fff;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .movie a:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	right: 0;
+	width: 10px;
+	height: 12px;
+	background: url('../images/common/2_btn_arrow.svg') no-repeat 50% 50%;
+  background-size: auto 12px;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide {
+	margin-top: 25px;
+	text-align: center;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide h3 {
+	padding-bottom: 86px;
+	background: url('../images/bg-counseling-guide.png') no-repeat 50% 100%;
+	background-size: auto 77px;
+	font-size: 1.9rem;
+	font-weight: 300;
+	color: #fff;
+	line-height: 1.2;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide > div {
+	border: 5px solid #00AAE0;
+	border-radius: 5px;
+	background: #00AAE0;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide > div > div {
+	padding: 0 7px;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0 4px 10px rgb(0 0 0 / 16%);
+}
+#result-wrap .result-cotain .result-contents .counselingGuide ul {
+	display: flex;
+	padding: 16px 0;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide ul li {
+	flex: 1 1 0;
+	padding-left: 58px;
+	list-style: none;
+	font-size: 1.3rem;
+	font-weight: 500;
+	line-height: 1.3;
+	color: #58595B;
+	background-position: 5px 50%;
+	background-repeat: no-repeat;
+	background-size: auto 43px;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide ul li.tel {
+	background-image: url('../images/ico-counsel1.png');
+}
+#result-wrap .result-cotain .result-contents .counselingGuide ul li.chat {
+	background-image: url('../images/ico-counsel2.png');
+}
+#result-wrap .result-cotain .result-contents .counselingGuide ul li span {
+	color: inherit;
+	font-weight: 300;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide p {
+	padding: 16px 0;
+	border-top: 1px solid #878787;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #0069AA;
+	text-align: center;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide p strong {
+	display: block;
+	color: inherit;
+	font-weight: 500;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide button {
+	position: relative;
+	display: inline-block;
+	margin-top: 28px;
+	padding: 0 0 3px 20px;
+	background: none;
+	border: 0 none;
+	font-size: 1.2rem;
+	font-weight: 300;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+#result-wrap .result-cotain .result-contents .counselingGuide button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	background: url('../images/ico-arrow-repeat2.png') no-repeat 0% 0%;
+	background-size: auto 16px;
+}
+
+
+
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .url-copy {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #00aae0;
+	border-radius: 5px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+	letter-spacing: -0.1px;
+	font-weight: 100;
+}
+#result-wrap .result-cotain .result-contents > .title-desc {
+	color: #fff;
+	font-size: 2.4rem;
+	letter-spacing: -1px;
+	line-height: 2.8rem;
+	margin-top: 28px;
+	font-weight: 400;
+}
+#result-wrap .result-cotain .result-contents > .title-sub-desc {
+	color: #fff;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	letter-spacing: -0.2px;
+	/* line-height: 2.8rem; */
+	margin-top: 10px;
+	font-weight: 100;
+}
+#result-wrap .result-cotain .result-contents > .phone {
+	height: 42px;
+	background-color: #b1ecff;
+	border-radius: 5px;
+	background-size: auto 55%;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0px 1px 10px 0px rgba(16, 47, 78, 0.3);
+}
+#result-wrap .result-cotain .result-contents > .phone01 {
+	background-image: url('../images/resultPhone15664990.png');
+}
+#result-wrap .result-cotain .result-contents > .phone02 {
+	background-image: url('../images/resultPhone16707480.png');
+}
+#result-wrap .result-cotain .result-contents > .bottom-btns {
+	display: flex;
+	margin-top: 25px;
+}
+#result-wrap .result-cotain .result-contents > .bottom-btns .btn {
+	flex: 1 0 48.1481481%;
+	height: 42px;
+	background-color: #fff;
+	border-radius: 5px;
+	min-width: 130px;
+	color: #878787;
+	font-size: 1.5rem;
+	letter-spacing: -0.5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 300;
+	background-repeat: no-repeat;
+	background-position: 15px center;
+}
+#result-wrap .result-cotain .result-contents > .bottom-btns .btn-pre {
+	margin-right: 10px;
+	background-image: url('../images/ico-pre-btn.png');
+	background-size: 8px 14px;
+}
+#result-wrap .result-cotain .result-contents > .bottom-btns .btn-next {
+	background-image: url('../images/ico-arrow-repeat.png');
+	background-size: 13px 11px;
+}
+
+/* main popup */
+/* alert */
+.alert-container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.alert-container .alert-content {
+	position: relative;
+	width: 80%;
+	max-width: 300px;
+	/* height: 150px; */
+	background-color: #FFF;
+	border-radius: 7px;
+	overflow: hidden;
+	padding: 25px 20px 15px;
+}
+.alert-container .alert-title {
+	font-size: 18px;
+	font-weight: 300;
+	box-shadow: inset 0px -1px 0px 0px #878787;
+	padding-bottom: 5px;
+}
+.alert-container .alert-text {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	font-size: 15px;
+	font-weight: 100;
+}
+.alert-container .alert-btn {
+	height: 42px;
+	box-shadow: inset 0px 0px 0px 1px #CAD2D4;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	color: #878787;
+}
