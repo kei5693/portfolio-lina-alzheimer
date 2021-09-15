@@ -39,6 +39,10 @@ var vm = new Vue({
 				localStorage.setItem("testQustionsSelected", JSON.stringify([null, null, null, null, null, null, null, null, null, null]))
 			}
 		}
+
+		setInterval(() => {
+			this.$refs.testStart.classList.toggle('on');
+		}, 500);
 	},
 	watch: {
 		testIndex(value) {
