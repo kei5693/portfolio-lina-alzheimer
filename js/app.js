@@ -168,7 +168,7 @@ var vm = new Vue({
       });
     },
 		onClickUrlCopy() {
-      var text = "치매테스트를 통해 나는 치매로부터 얼마나 자유로운지 확인해보세요!" + encodeURIComponent("\n" + location.href);
+      var text = "치매테스트를 통해 나는 치매로부터 얼마나 자유로운지 확인해보세요!" + encodeURIComponent("\n" + 'https://kei5693.github.io/lina-alzheimer/index.html');
       location.href = 'sms:' + (this.checkMobile() == 'ios' ? '&' : '?') + 'body='+ text;
     },
     checkMobile(){
