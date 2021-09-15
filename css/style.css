@@ -396,11 +396,27 @@
   background-size: auto 106px;
 }
 .contents .inner .test-start {
+	overflow: hidden;
+	position: relative;
   padding: 7px 0px 6px 13px;
   border: 1px solid #00AAE0;
   border-radius: 5px;
   background: #B1ECFF url('../images/index/1_img02-right.png') no-repeat 95% 100%;
   background-size: auto 59px;
+}
+.contents .inner .test-start:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(60deg, transparent 35%, rgba(255, 192, 203, 0.9), transparent 65%);
+	animation: blinkLoop 8s infinite cubic-bezier(0, 0, 0, 0.21);
+}
+@keyframes blinkLoop {
+	0%				{left: -100%;}
+	50%,100%	{left: 100%;}
 }
 .contents .inner .test-start p {
   color: #231F20;
@@ -415,12 +431,6 @@
   line-height: 1;
   letter-spacing: -1px;
   color: #0069AA;
-  animation: blinkText alternate 2s infinite cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-@keyframes blinkText {
-  0%, 5%		{opacity: 1;}
-  10%, 15%	{opacity: 0;}
-  20%, 100%	{opacity: 1;}
 }
 .contents .inner .test-start h3 span {
   position: relative;
