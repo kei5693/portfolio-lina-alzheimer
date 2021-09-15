@@ -40,9 +40,12 @@ var vm = new Vue({
 			}
 		}
 
-		setInterval(() => {
-			this.$refs.testStart.classList.toggle('on');
-		}, 500);
+		if( this.$refs.testStart ){
+			setInterval(() => {
+				this.$refs.testStart.classList.toggle('on');
+			}, 500);
+		}
+
 	},
 	watch: {
 		testIndex(value) {
