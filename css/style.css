@@ -462,7 +462,9 @@
 	display: block;
   width: 100%;
 }
-.contents .inner .contents-box .visual p {
+.contents .inner .contents-box .visual + p {
+	position: relative;
+	z-index: 200;
 	margin-top: 10px;
 	font-size: 1.1rem;
 	color: #A4D0EB;
@@ -632,7 +634,13 @@
 	flex: 1 1 0;
 	margin: 12px;
 	font-size: 1.3rem;
+	font-weight: 300;
 	color: #fff;
+}
+#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .movie a span {
+	display: block;
+	color: inherit;
+	font-weight: 500;
 }
 #result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .movie a:after {
 	content: '';
@@ -671,6 +679,7 @@
 #result-wrap .result-cotain .result-contents .counselingGuide ul {
 	display: flex;
 	padding: 16px 0;
+	text-align: left;
 }
 #result-wrap .result-cotain .result-contents .counselingGuide ul li {
 	flex: 1 1 0;
