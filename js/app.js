@@ -70,8 +70,9 @@ var vm = new Vue({
 				_parammap[decode(arguments[1])] = decode(arguments[2]);
 			});
 			var intCount = parseInt(_parammap["c"])
-			intCount = isNaN(intCount) ? 0 : intCount
-			return intCount >= 10 ? intCount : "0".concat(intCount);
+			intCount = isNaN(intCount) ? 0 : intCount * 10
+			//return intCount >= 10 ? intCount : "0".concat(intCount);
+			return intCount
 		},
 		resultText() {
 			return parseInt(this.trueCount) >= 5 ? "있습" : "없습"

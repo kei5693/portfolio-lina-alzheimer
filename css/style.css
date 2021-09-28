@@ -396,8 +396,11 @@
   background-size: auto 106px;
 }
 .contents .inner .test-start {
+	display: flex;
+	align-items: center;
 	position: relative;
   padding: 7px 0px 6px 13px;
+	min-height: 80px;
   border: 1px solid #00AAE0;
   border-radius: 5px;
   background: #B1ECFF url('../images/index/1_img02-right.png') no-repeat 95% 100%;
@@ -409,14 +412,14 @@
 	transform: translate(3px, 3px);
 	box-shadow: none;
 }
-.contents .inner .test-start p {
+/* .contents .inner .test-start p {
   color: #231F20;
   font-size: 1.3rem;
   font-weight: 100;
-}
+} */
 .contents .inner .test-start p strong {font-weight: 500;}
 .contents .inner .test-start h3 {
-  margin-top: 5px;
+  /* margin-top: 5px; */
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1;
@@ -512,8 +515,8 @@
 }
 #result-wrap .result-cotain .result-contents .title {
   padding-bottom: 12px;
-  background: url('../images/img-result.png') no-repeat 100% 100%;
-	background-size: auto 75px;
+  /* background: url('../images/img-result.png') no-repeat 100% 100%; */
+	/* background-size: auto 75px; */
 }
 #result-wrap .result-cotain .result-contents .title h2 {
 	color: #fff;
@@ -589,13 +592,13 @@
 	background-position: right bottom;
 }
 #result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con .alzheimer {
-  background-image: url('../images/info-btn01.png');
+  /* background-image: url('../images/info-btn01.png'); */
 	margin-right: 10px;
 }
 #result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con > div > p {
 	position: relative;
   margin: 12px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   font-weight: 300;
   color: #0069AA;
@@ -614,15 +617,14 @@
 	background: url('../images/common/1_btn_arrow.svg') no-repeat 50% 50%;
   background-size: auto 12px;
 }
-#result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con .cdr {
+/* #result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .between-con .cdr {
 	background-image: url('../images/info-btn02.png');
-}
+} */
 #result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .movie {
 	display: flex;
 	margin-top: 10px;
 	border-radius: 5px;
-	background: #00AAE0 url('../images/info-btn03.png') no-repeat calc(100% - 40px) 100%;
-	background-size: auto 33px;
+	background: #00AAE0;
 }
 #result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .movie a {
 	position: relative;
@@ -640,18 +642,20 @@
 #result-wrap .result-cotain .result-contents .resultBox .alzheimer_related .movie a:after {
 	content: '';
 	position: absolute;
-	top: 2px;
+	top: 50%;
 	right: 0;
-	width: 10px;
-	height: 12px;
-	background: url('../images/common/2_btn_arrow.svg') no-repeat 50% 50%;
-  background-size: auto 12px;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	background: url('../images/info-btn04.png') no-repeat 50% 50%;
+	background-size: auto 24px;
 }
 #result-wrap .result-cotain .result-contents .counselingGuide {
 	margin-top: 25px;
 	text-align: center;
 }
 #result-wrap .result-cotain .result-contents .counselingGuide h3 {
+	display: none;
 	padding-bottom: 86px;
 	background: url('../images/bg-counseling-guide.png') no-repeat 50% 100%;
 	background-size: auto 77px;
